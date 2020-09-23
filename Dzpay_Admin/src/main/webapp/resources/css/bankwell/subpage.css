@@ -1,0 +1,266 @@
+/* CSS Document */
+
+/*메뉴 경로 표시*/
+.slide_title {
+	margin: 20px 10px 0 10px;
+	width:952px;
+	height:60px;
+	background-image: url(../images/sub_back.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+.slide_title span.title{
+	font-weight:bold;
+	color:#fff;
+	margin : 10px 0 0 30px;
+	position: absolute;
+}
+
+/* 서브 메뉴 시작 */
+#sub_menu {
+	width:170px;
+	float:left;
+	margin:0 0 0 10px;	/* 그림자때문*/
+}
+#sub_menu ul {
+	margin: 0 0 0 20px;
+	padding:0;
+	list-style:none;
+}
+#sub_menu li.top {
+	color: #2954a2;
+	display:block;
+	width:144px;
+	padding: 20px 0;
+	font-family : Georgia, Tahoma, Times New Roman;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration:none;
+	text-align: center;
+}
+#sub_menu a {
+	text-decoration:none;
+	color: #666;
+	display:block;
+	height:15px;
+	width:130px;
+	padding: 7px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+	background-image: url(../images/bullet_blue.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#sub_menu a:hover {
+	background-image: url(../images/bullet_orange.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	color: #ef7800;	
+}
+
+#sub_menu span.choice {	
+	color: #ef7800;
+	font-weight: bold;
+}
+
+/* 콘텐츠 시작 */
+#article {
+	width:740px;
+	margin-right: 9px; /*그림자효과때문에*/
+	padding-right:20px;	
+	float:right;
+	line-height: 1.5em;
+}
+
+#article table{	line-height: 1.2em; }
+
+#condition { margin : 0 0 30px 0; }
+#condition table{ line-height: 1.2em; }
+
+/* single table css */
+#single thead th{ text-align: left; }
+#single tbody th{ 
+	text-align: right;
+	background: #dde0e2;
+}
+#single tbody th, #single tbody td{
+	border-right: 1px solid #779;
+}
+#single tbody td.border_none{ border-right:none; }
+
+
+/* condition table css */
+#condition thead th{
+	text-align: center;
+}
+
+#condition tbody td.con_btn{
+	text-align: center;
+	vertical-align: middle;
+}
+#condition tbody tr:hover{
+	background: none;
+}
+
+/*
+#condition td, th {
+	padding: .4em .4em;
+	vertical-align: middle;
+}
+*/
+/*
+#condition tbody th{
+	background: #f8f7e8;
+	text-align: center;
+}
+*/
+
+
+/* list table css */
+
+/*table { width:100%; border-collapse: collapse; }*/
+caption { font-size: 1em; color: #444; }
+
+caption.title {
+	background-image: url(../images/common/icon_blue.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 5px 20px;
+	color: #313391;
+	text-align:left;
+	font-weight: bold;	
+	height: 13px;	
+}
+
+/*
+td, th {
+	text-align: left;
+	padding: .6em .4em;
+	vertical-align: middle;
+}
+*/
+/*
+.center{ text-align: center; }
+.right{ text-align: right; }
+.form {
+    color: #535353;
+    font-size: 12px;
+    height: 15px;
+    align: absmiddle;
+    vertical-align: middle;
+}
+*/
+
+.btn_img{
+	align: absmiddle;
+	vertical-align: middle;
+	cursor: pointer;
+	
+}
+
+thead th, tfoot th, tfoot td {
+	border: 1px solid #113c8a;
+	border-width: 1px 0;
+	background: #e6f4fb;
+	color: #444;
+	font-weight: bold;
+}
+
+thead th{
+	text-align: center;
+}
+
+tbody th{
+	text-align: center;
+}
+
+tbody tr {
+	background: #fcfcff;
+}
+
+tbody tr.odd {
+	background: #fffcfc;
+}
+
+tbody tr:hover {
+	background: #f0f0fe;
+}
+
+tbody tr.odd:hover {
+	background-color: #fef0f0;
+}
+
+tbody td, tbody th {
+	border-bottom: 1px solid #779;
+}
+
+tbody td{
+	/* 말줄임표 */
+	overflow:hidden;
+	/*	
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    */
+}
+
+tbody tr.odd td, tbody tr.odd th {
+	border-color: #977;
+}
+
+tbody tr:last-child td, tbody tr:last-child th {
+	border: none;
+}
+
+tbody tr a {
+	color: #449;
+	text-decoration: none;
+}
+
+tbody tr.odd a {
+	color: #944;
+}
+
+tbody a:visited {
+	/*text-decoration: line-through;*/
+}
+
+tbody tr a:hover {
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	color: #009;
+}
+
+tbody tr.odd a:hover {
+	color: #900;
+}
+
+#list2 tbody td, #list2 tbody th {border-right: 1px solid #779;}
+#list2 tbody td.border_none, #list2 tbody th.border_none{ border-right:none; }
+#list2 tbody tr.odd { background: #fde4e4; }
+#list2 tbody tr:hover { background: #d7d7fc; }
+#list2 tbody tr.odd:hover { background-color: #fed9d9; }
+
+/* page navi 이용 */
+tfoot tr a {
+	color: #df6d00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+tfoot tr a:hover, a:active {
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	color: #ff0000;
+}
+
+#button_bar {
+	margin:20px 0 0 0;
+	text-align:right;
+}
+
+span.description{
+	color: #666;
+}

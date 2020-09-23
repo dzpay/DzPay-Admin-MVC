@@ -1,0 +1,462 @@
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+BODY {
+	FONT-SIZE: 9pt; MARGIN: 0px; font-family: Dotum, "돋움", Verdana, Geneva, Helvetica, sans-serif;
+}
+TD {
+	FONT-SIZE: 9pt; COLOR: #666666; FONT-FAMILY: "돋움", "바탕", "굴림", "굴림체", Times New Roman, Arial, System
+}
+INPUT {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: 돋움
+}
+SELECT {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: 돋움
+}
+.td_white {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: 돋움
+}
+.td_black {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: 돋움
+}
+.td_gray {
+	FONT-SIZE: 12px; COLOR: #e7e7e7; FONT-FAMILY: 돋움
+}
+.green A:link {
+	FONT-SIZE: 9px; COLOR: #667f37; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.green A:visited {
+	FONT-SIZE: 9px; COLOR: #667f37; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.green A:hover {
+	FONT-SIZE: 9px; COLOR: #ff8400; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.violet A:link {
+	FONT-SIZE: 12px; COLOR: #6b59c2; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.violet A:visited {
+	FONT-SIZE: 12px; COLOR: #6b59c2; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.violet A:hover {
+	FONT-SIZE: 12px; COLOR: #ff8400; FONT-FAMILY: 돋움; TEXT-DECORATION: underline
+}
+.violet2 A:link {
+	FONT-SIZE: 12px; COLOR: #9878de; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.violet2 A:visited {
+	FONT-SIZE: 12px; COLOR: #9878de; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.violet2 A:hover {
+	FONT-SIZE: 12px; COLOR: #9878de; FONT-FAMILY: 돋움; TEXT-DECORATION: underline
+}
+.font11 {
+	FONT-SIZE: 11px; COLOR: #000509; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.font11 A:link {
+	FONT-SIZE: 11px; COLOR: #000509; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.font11 A:visited {
+	FONT-SIZE: 11px; COLOR: #000509; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.font11 A:hover {
+	FONT-SIZE: 11px; COLOR: #000509; FONT-FAMILY: 돋움; TEXT-DECORATION: underline
+}
+.orange A:link {
+	FONT-SIZE: 12px; COLOR: #ff6600; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.orange A:visited {
+	FONT-SIZE: 12px; COLOR: #ff6600; FONT-FAMILY: 돋움; TEXT-DECORATION: none
+}
+.orange A:hover {
+	FONT-SIZE: 12px; COLOR: #ff8400; FONT-FAMILY: 돋움; TEXT-DECORATION: underline
+}
+under A:link {
+	FONT-SIZE: 9px; COLOR: #474747; FONT-FAMILY: 돋움; LETTER-SPACING: -1px; TEXT-DECORATION: underline
+}
+under A:visited {
+	FONT-SIZE: 9px; COLOR: #474747; FONT-FAMILY: 돋움; LETTER-SPACING: -1px; TEXT-DECORATION: underline
+}
+under A:hover {
+	FONT-SIZE: 9px; COLOR: #ff8400; FONT-FAMILY: 돋움; LETTER-SPACING: -1px; TEXT-DECORATION: none
+}
+.ht16s {
+	FONT-SIZE: 8pt; COLOR: #666666; LINE-HEIGHT: 16px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.ht16s A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht16s A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht16s A:hover {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht16s A:active {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht {
+	FONT-SIZE: 9pt; COLOR: #666666; FONT-FAMILY: 돋움
+}
+.ht A:link {
+	COLOR: #9f31d5; TEXT-DECORATION: none
+}
+.ht A:visited {
+	COLOR: #fe7e00; TEXT-DECORATION: none
+}
+.ht A:hover {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht A:active {
+	COLOR: #fe7e00; TEXT-DECORATION: none
+}
+.ht16 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9pt; PADDING-BOTTOM: 0px; COLOR: #666666; LINE-HEIGHT: 16px; PADDING-TOP: 3px; FONT-FAMILY: 돋움
+}
+.ht16 A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht16 A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht16 A:hover {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht16 A:active {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht18 {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움
+}
+.ht18 A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht18 A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht18 A:hover {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht18 A:active {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.nn {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9pt; PADDING-BOTTOM: 0px; COLOR: #005da7; LINE-HEIGHT: 23px; PADDING-TOP: 3px; FONT-FAMILY: 돋움
+}
+.nn A:link {
+	COLOR: #005da7; TEXT-DECORATION: none
+}
+.nn A:visited {
+	COLOR: #005da7; TEXT-DECORATION: none
+}
+.nn A:hover {
+	COLOR: #005da7; TEXT-DECORATION: none
+}
+.nn A:active {
+	COLOR: #005da7; TEXT-DECORATION: none
+}
+.ht20 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9pt; PADDING-BOTTOM: 0px; COLOR: #666666; LINE-HEIGHT: 20px; PADDING-TOP: 3px; FONT-FAMILY: 돋움
+}
+.ht20 A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht20 A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht20 A:hover {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht20 A:active {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht24 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 9pt; PADDING-BOTTOM: 0px; COLOR: #666666; LINE-HEIGHT: 24px; PADDING-TOP: 3px; FONT-FAMILY: 돋움
+}
+.ht24 A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht24 A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.ht24 A:hover {
+	COLOR: #1b8f00; TEXT-DECORATION: none
+}
+.ht24 A:active {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.pic {
+	FONT-SIZE: 9pt; COLOR: #9c58a0; FONT-FAMILY: 돋움,seoul, Arial
+}
+.pic A:link {
+	COLOR: #9c58a0; TEXT-DECORATION: none
+}
+.pic A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.pic A:hover {
+	COLOR: #682a6c; TEXT-DECORATION: none
+}
+.pic A:active {
+	COLOR: #9c58a0; TEXT-DECORATION: none
+}
+.category {
+	FONT-SIZE: 9pt; COLOR: #19624e; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.category A:link {
+	COLOR: #19624e; TEXT-DECORATION: none
+}
+.category A:visited {
+	COLOR: #19624e; TEXT-DECORATION: none
+}
+.category A:hover {
+	COLOR: #ff0902; TEXT-DECORATION: none
+}
+.category A:active {
+	COLOR: #19624e; TEXT-DECORATION: none
+}
+.newbook {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #c9760c; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움,seoul, Arial; LETTER-SPACING: -1px
+}
+.newbook A:link {
+	COLOR: #c9760c; TEXT-DECORATION: none
+}
+.newbook A:visited {
+	COLOR: #c9760c; TEXT-DECORATION: none
+}
+.newbook A:hover {
+	COLOR: #c9760c; TEXT-DECORATION: none
+}
+.newbook A:active {
+	COLOR: #c9760c; TEXT-DECORATION: none
+}
+.popular {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #c11813; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움,seoul, Arial; LETTER-SPACING: -1px
+}
+.popular A:link {
+	COLOR: #c11813; TEXT-DECORATION: none
+}
+.popular A:visited {
+	COLOR: #c11813; TEXT-DECORATION: none
+}
+.popular A:hover {
+	COLOR: #c11813; TEXT-DECORATION: none
+}
+.popular A:active {
+	COLOR: #c11813; TEXT-DECORATION: none
+}
+.best {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #00555a; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움,seoul, Arial; LETTER-SPACING: -1px
+}
+.best A:link {
+	COLOR: #00555a; TEXT-DECORATION: none
+}
+.best A:visited {
+	COLOR: #00555a; TEXT-DECORATION: none
+}
+.best A:hover {
+	COLOR: #00555a; TEXT-DECORATION: none
+}
+.best A:active {
+	COLOR: #00555a; TEXT-DECORATION: none
+}
+.depth01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #6183cb; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움,seoul, Arial; LETTER-SPACING: -1px
+}
+.depth01 A:link {
+	COLOR: #6183cb; TEXT-DECORATION: none
+}
+.depth01 A:visited {
+	COLOR: #6183cb; TEXT-DECORATION: none
+}
+.depth01 A:hover {
+	COLOR: #6183cb; TEXT-DECORATION: none
+}
+.depth01 A:active {
+	COLOR: #6183cb; TEXT-DECORATION: none
+}
+.booktitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #3d818a; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움,seoul, Arial; LETTER-SPACING: -1px
+}
+.booktitle A:link {
+	COLOR: #3d818a; TEXT-DECORATION: none
+}
+.booktitle A:visited {
+	COLOR: #3d818a; TEXT-DECORATION: none
+}
+.booktitle A:hover {
+	COLOR: #3d818a; TEXT-DECORATION: none
+}
+.booktitle A:active {
+	COLOR: #3d818a; TEXT-DECORATION: none
+}
+.poll {
+	FONT-SIZE: 12px; COLOR: #1b6a74; LINE-HEIGHT: 14px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.poll A:link {
+	COLOR: #1b6a74; TEXT-DECORATION: none
+}
+.poll A:visited {
+	COLOR: #1b6a74; TEXT-DECORATION: none
+}
+.poll A:hover {
+	COLOR: #1b6a74; TEXT-DECORATION: none
+}
+.poll A:active {
+	COLOR: #1b6a74; TEXT-DECORATION: none
+}
+.left {
+	FONT-SIZE: 12px; COLOR: #818181; LINE-HEIGHT: 16px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.left A:link {
+	COLOR: #818181; TEXT-DECORATION: none
+}
+.left A:visited {
+	COLOR: #818181; TEXT-DECORATION: none
+}
+.left A:hover {
+	COLOR: #00a49b; TEXT-DECORATION: none
+}
+.left A:active {
+	COLOR: #818181; TEXT-DECORATION: none
+}
+.location {
+	FONT-SIZE: 12px; COLOR: #839257; LINE-HEIGHT: 16px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.location A:link {
+	COLOR: #839257; TEXT-DECORATION: none
+}
+.location A:visited {
+	COLOR: #839257; TEXT-DECORATION: none
+}
+.location A:hover {
+	COLOR: #839257; TEXT-DECORATION: none
+}
+.location A:active {
+	COLOR: #839257; TEXT-DECORATION: none
+}
+.community {
+	FONT-SIZE: 12px; COLOR: #5c8c00; LINE-HEIGHT: 16px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.community A:link {
+	COLOR: #5c8c00; TEXT-DECORATION: none
+}
+.community A:visited {
+	COLOR: #5c8c00; TEXT-DECORATION: none
+}
+.community A:hover {
+	COLOR: #5c8c00; TEXT-DECORATION: none
+}
+.community A:active {
+	COLOR: #5c8c00; TEXT-DECORATION: none
+}
+.event {
+	FONT-SIZE: 12px; COLOR: #0368b9; LINE-HEIGHT: 16px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.event A:link {
+	COLOR: #0368b9; TEXT-DECORATION: none
+}
+.event A:visited {
+	COLOR: #0368b9; TEXT-DECORATION: none
+}
+.event A:hover {
+	COLOR: #0368b9; TEXT-DECORATION: none
+}
+.event A:active {
+	COLOR: #0368b9; TEXT-DECORATION: none
+}
+.auth {
+	FONT-SIZE: 12px; COLOR: #387238; LINE-HEIGHT: 16px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.auth A:link {
+	COLOR: #387238; TEXT-DECORATION: none
+}
+.auth A:visited {
+	COLOR: #387238; TEXT-DECORATION: none
+}
+.auth A:hover {
+	COLOR: #387238; TEXT-DECORATION: none
+}
+.auth A:active {
+	COLOR: #387238; TEXT-DECORATION: none
+}
+.page {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #666666; LINE-HEIGHT: 16px; PADDING-TOP: 3px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.page A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.page A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.page A:hover {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.page A:active {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+.cate {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #a29665; LINE-HEIGHT: 16px; PADDING-TOP: 3px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.cate A:link {
+	COLOR: #a29665; TEXT-DECORATION: none
+}
+.cate A:visited {
+	COLOR: #a29665; TEXT-DECORATION: none
+}
+.cate A:hover {
+	COLOR: #967136; TEXT-DECORATION: none
+}
+.cate A:active {
+	COLOR: #a29665; TEXT-DECORATION: none
+}
+.media {
+	FONT-SIZE: 12px; COLOR: #818181; LINE-HEIGHT: 18px; FONT-FAMILY: 돋움,seoul, Arial
+}
+.media A:link {
+	COLOR: #818181; TEXT-DECORATION: none
+}
+.media A:visited {
+	COLOR: #818181; TEXT-DECORATION: none
+}
+.media A:hover {
+	COLOR: #818181; TEXT-DECORATION: underline
+}
+.media A:active {
+	COLOR: #818181; TEXT-DECORATION: none
+}
+.link {
+	BORDER-RIGHT: #91b4a0 1px solid; BORDER-TOP: #91b4a0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #e6e6e6; BORDER-LEFT: #91b4a0 1px solid; WIDTH: 169px; COLOR: #666666; BORDER-BOTTOM: #91b4a0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 17px
+}
+.input01 {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 9pt; BACKGROUND: #ffffff; PADDING-BOTTOM: 0px; BORDER-LEFT: #ffffff 1px solid; COLOR: #666666; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 19px
+}
+.input_s {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #ffffff; BORDER-LEFT: #c0c0c0 1px solid; COLOR: #666666; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 19px
+}
+.input {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #ffffff; BORDER-LEFT: #c0c0c0 1px solid; WIDTH: 81px; COLOR: #666666; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 17px
+}
+.input_mem {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #ffffff; BORDER-LEFT: #c0c0c0 1px solid; COLOR: #666666; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 17px
+}
+.input_multi {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #ffffff; BORDER-LEFT: #c0c0c0 1px solid; COLOR: #666666; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 50px
+}
+.multi01 {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #ffffff; BORDER-LEFT: #c0c0c0 1px solid; COLOR: #666666; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 40px
+}
+.multi02 {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #ffffff; BORDER-LEFT: #c0c0c0 1px solid; COLOR: #666666; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 80px
+}
+.search_sel {
+	BORDER-RIGHT: #91b4a0 1px solid; BORDER-TOP: #91b4a0 1px solid; FONT-SIZE: 9pt; BACKGROUND: #ffffff; BORDER-LEFT: #91b4a0 1px solid; WIDTH: 80px; COLOR: #666666; BORDER-BOTTOM: #91b4a0 1px solid; FONT-FAMILY: 돋움,seoul, Arial; HEIGHT: 18px
+}
+.input02 {
+	BORDER-RIGHT: #b6ae9b 1px solid; BORDER-TOP: #b6ae9b 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #b6ae9b 1px solid; BORDER-BOTTOM: #b6ae9b 1px solid; FONT-FAMILY: 굴림
+}
+.style1 {
+	FONT-WEIGHT: bold; COLOR: #ff6600
+}
+TEXTAREA {
+	BORDER-RIGHT: #bcbcbd 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #bcbcbd 1px solid; PADDING-LEFT: 3px; SCROLLBAR-FACE-COLOR: #eeeeee; FONT-SIZE: 9pt; PADDING-BOTTOM: 3px; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; BORDER-LEFT: #bcbcbd 1px solid; SCROLLBAR-SHADOW-COLOR: #bcbcbd; COLOR: #333333; LINE-HEIGHT: 140%; SCROLLBAR-ARROW-COLOR: #999999; PADDING-TOP: 3px; BORDER-BOTTOM: #bcbcbd 1px solid; FONT-FAMILY: verdana; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; SCROLLBAR-BASE-COLOR: #bcbcbd; tahoma: 
+}

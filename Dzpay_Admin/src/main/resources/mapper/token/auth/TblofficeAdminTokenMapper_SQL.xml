@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="TblofficeAdminTokenMapper_SQL">
+	<resultMap id="BaseResultMap"
+		type="com.dzpay.admin.common.dto.token.auth.TblofficeAdminToken">
+		<id column="ID" jdbcType="NUMERIC" property="id" />
+		<result column="ADMINID" jdbcType="VARCHAR" property="adminid" />
+		<result column="SITECODE" jdbcType="VARCHAR"
+			property="sitecode" />
+		<result column="ACCESSTOKEN" jdbcType="VARCHAR"
+			property="accesstoken" />
+		<result column="CREATEDDATE" jdbcType="TIMESTAMP"
+			property="createddate" />
+		<result column="MODIFIEDDATE" jdbcType="TIMESTAMP"
+			property="modifieddate" />
+	</resultMap>
+
+	<select id="selectBySitecodeAndAccesstoken"
+		parameterType="java.util.HashMap" resultMap="BaseResultMap">
+		select ID, ADMINID,
+		SITECODE, ACCESSTOKEN, CREATEDDATE, MODIFIEDDATE
+		from
+		SKYPG.TBLOFFICE_ADMIN_TOKEN
+		where SITECODE = #{sitecode,
+		jdbcType=VARCHAR} AND ACCESSTOKEN = #{accesstoken, jdbcType=VARCHAR}
+	</select>
+
+	<!-- 로그인 및 사이트 접근 시, 토큰 등록 여부 -->
+	<select id="selectByAdminidAndSitecode"
+		parameterType="java.util.HashMap" resultMap="BaseResultMap">
+		select ID, ADMINID,
+		SITECODE, ACCESSTOKEN, CREATEDDATE, MODIFIEDDATE
+		from
+		SKYPG.TBLOFFICE_ADMIN_TOKEN
+		where SITECODE =
+		#{sitecode,jdbcType=VARCHAR} AND ADMINID = #{adminid,
+		jdbcType=VARCHAR}
+	</select>
+
+	<insert id="insert"
+		parameterType="com.dzpay.admin.common.dto.token.auth.TblofficeAdminToken">
+		insert into SKYPG.TBLOFFICE_ADMIN_TOKEN (ID, ADMINID,
+		SITECODE, ACCESSTOKEN,
+		CREATEDDATE, MODIFIEDDATE
+		)
+		values (
+		officeAdminToken_seq.NEXTVAL, #{adminid, jdbcType=VARCHAR},
+		#{sitecode,jdbcType=VARCHAR},
+		#{accesstoken,jdbcType=VARCHAR},
+		SYSDATE,
+		#{modifieddate,jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+	<update id="updateByAdminidAndSitecode"
+		parameterType="java.util.HashMap">
+		update SKYPG.TBLOFFICE_ADMIN_TOKEN
+		set
+		ACCESSTOKEN =
+		#{accesstoken,jdbcType=VARCHAR},
+		MODIFIEDDATE = SYSDATE
+		where ADMINID
+		=
+		#{adminid,jdbcType=VARCHAR} AND SITECODE= #{sitecode,
+		jdbcType=VARCHAR}
+	</update>
+
+
+	<update id="updateByPrimaryKey"
+		parameterType="com.dzpay.admin.common.dto.token.auth.TblofficeAdminToken">
+		update SKYPG.TBLOFFICE_ADMIN_TOKEN
+		set SITECODE =
+		#{sitecode,jdbcType=VARCHAR},
+		ACCESSTOKEN =
+		#{accesstoken,jdbcType=VARCHAR},
+		CREATEDDATE =
+		#{createddate,jdbcType=TIMESTAMP},
+		MODIFIEDDATE =
+		#{modifieddate,jdbcType=TIMESTAMP}
+		where ID = #{ID,
+		ADMINID,jdbcType=NUMERIC}
+	</update>
+
+	<select id="selectByPrimaryKey" parameterType="java.lang.Short"
+		resultMap="BaseResultMap">
+		select ID, ADMINID, SITECODE, ACCESSTOKEN, CREATEDDATE,
+		MODIFIEDDATE
+		from
+		SKYPG.TBLOFFICE_ADMIN_TOKEN
+		where ID = #{ID,
+		ADMINID,jdbcType=NUMERIC}
+	</select>
+
+	<select id="selectAll" resultMap="BaseResultMap">
+		select ID, ADMINID, SITECODE,
+		ACCESSTOKEN, CREATEDDATE, MODIFIEDDATE
+		from
+		SKYPG.TBLOFFICE_ADMIN_TOKEN
+	</select>
+
+</mapper>

@@ -1,0 +1,92 @@
+A:link   { font-family: "굴림","verdana"; font-size: 9pt; color: #5F0B8A ; text-decoration: underline}
+A:visited{ font-family: "굴림","verdana"; font-size: 9pt; color: #5F0B8A ; text-decoration: underline}
+A:active { font-family: "굴림","verdana"; font-size: 9pt; color: #5F0B8A ; text-decoration: underline}
+A:hover  { font-family: "굴림","verdana"; font-size: 9pt; color: #5F0B8A ; text-decoration: underline}
+
+BODY        {FONT-SIZE: 9pt; COLOR: #666666; FONT-FAMILY: "굴림","verdana"; margin: 0; scrollbar-face-color:#DBDADA; scrollbar-highlight-color: ededed; scrollbar-shadow-color: #777777; scrollbar-3dlight-color: #dadada; scrollbar-darkshadow-color: #cccccc; scrollbar-track-color: #e6e6e6; scrollbar-arrow-color: #000000;}
+
+TD          {FONT-SIZE: 9pt; COLOR: #666666; font-family: "굴림","verdana"; line-height:13pt; }
+
+IMG 	    {border: none;}
+
+
+.input_A {Background-Color:white; Border:1px SOLID #B5B5B5; font-family:"굴림";line-height:12pt; font-size:9pt; color: #444444; }
+.input_B {Background-Color:EBEBEB; Border:1px SOLID #333333; font-family:"굴림"; line-height:12pt; font-size:9pt; font-color: #666666 }
+
+.copyright  {font-size: 7pt;  }
+.no_link   A:link   { font-family: "굴림","verdana"; font-size: 9pt; color: #666666 ; text-decoration: none}
+.no_link   A:visited{ font-family: "굴림","verdana"; font-size: 9pt; color: #666666 ; text-decoration: none}
+.no_link   A:active { font-family: "굴림","verdana"; font-size: 9pt; color: #666666 ; text-decoration: none}
+.no_link   A:hover  { font-family: "굴림","verdana"; font-size: 9pt; color: #666666 ; text-decoration: underline}
+
+.error {color: #B50505; font-weight: bold;  }
+.today  {color: #05607E; font-weight: bold;  }
+.btn
+{
+    BORDER-COLOR: #CAC37E;
+    BORDER-TOP-WIDTH: 1px; 
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    BORDER-BOTTOM-WIDTH: 1px;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;  
+    PADDING-TOP: 4px;  
+    FONT-SIZE: 9pt;
+    BACKGROUND-IMAGE: url(/image/new/css_bg.gif);
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: "굴림";
+    HEIGHT: 23px;
+    COLOR: #3A3500;	
+}
+
+.inbtn
+{
+    BORDER-COLOR: #656565;
+    BORDER-TOP-WIDTH: 1px; 
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    BORDER-BOTTOM-WIDTH: 1px;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;  
+    PADDING-TOP: 2px;  
+    FONT-SIZE: 8pt;
+    BACKGROUND-IMAGE: url(/image/new/css_bg2.gif);
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: "굴림";
+    HEIGHT: 18px;
+    COLOR: #5B5A5A;	
+}
+
+.left  {color: #393939; font-weight: bold;  }
+.left   A:link   { font-family: "굴림","verdana"; font-size: 9pt; color: #393939 ; text-decoration: none}
+.left   A:visited{ font-family: "굴림","verdana"; font-size: 9pt; color: #393939 ; text-decoration: none}
+.left   A:active { font-family: "굴림","verdana"; font-size: 9pt; color: #393939 ; text-decoration: none}
+.left   A:hover  { font-family: "굴림","verdana"; font-size: 9pt; color: #393939 ; text-decoration: underline}
+
+.menu1  {color: #007C87; font-weight: bold; font-size: 10pt  }
+.menu2  {color: #438111; font-weight: bold; font-size: 10pt  }
+.menu3  {color: #663399; font-weight: bold; font-size: 10pt  }
+.menu4  {color: #3353AA; font-weight: bold; font-size: 10pt  }
+.menu5  {color: #12831D; font-weight: bold; font-size: 10pt  }
+.menu6  {color: #0066CC; font-weight: bold; font-size: 10pt  }
+.menu7  {color: #894604; font-weight: bold; font-size: 10pt  }
+.menu8  {color: #8B041E; font-weight: bold; font-size: 10pt  }
+.menu9  {color: #666A02; font-weight: bold; font-size: 10pt  }
+.menu10  {color: #1C4094; font-weight: bold; font-size: 10pt  }
+.menu11  {color: #B66D00; font-weight: bold; font-size: 10pt  }
+
+.frame  {color: #894604; font-weight: bold;  }
+.frame   A:link   { font-family: "굴림","verdana"; font-size: 9pt; color: #894604 ; text-decoration: underline}
+.frame   A:visited{ font-family: "굴림","verdana"; font-size: 9pt; color: #894604 ; text-decoration: underline}
+.frame   A:active { font-family: "굴림","verdana"; font-size: 9pt; color: #894604 ; text-decoration: underline}
+.frame   A:hover  { font-family: "굴림","verdana"; font-size: 9pt; color: #894604 ; text-decoration: underline}
+
+body {
+scrollbar-face-color:#f0f0f0;
+scrollbar-highlight-color: ffffff;
+scrollbar-3dlight-color: #f2f2f2;
+scrollbar-shadow-color: f9f9f9;
+scrollbar-darkshadow-color: #cccccc;
+scrollbar-track-color: #e6e6e6;
+scrollbar-arrow-color: #4D96BD
+}

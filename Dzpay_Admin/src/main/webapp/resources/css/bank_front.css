@@ -1,0 +1,105 @@
+/* CSS Document */
+
+.main_img {
+	width:971px;
+	height:308px;
+	background-image: url(../images/main/main01.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#main_link{
+	width:270px; 
+	margin: 50px 0 0 280px; 
+	padding:10px; 
+	float:left; 
+	line-height:15px;	
+}
+#main_link table{
+	align:center;
+}
+#main_link td{border-bottom: none;}
+#main_link tr:hover {background: none;}
+
+#main_link img { padding:6px 0;}
+#main_link span.title {
+	font-size: 30px;
+	font-weight: bold;
+	line-height:40px;
+	color:#215f92;
+}
+
+#member_info{
+	width:250px;
+	margin:60px 70px 0 0;
+	padding:10px 15px 15px 20px; 
+	border:solid 3px #3e5aa4;
+	border-radius:10px;
+	line-height:20px;
+	float:right;
+}
+
+/* main contents  */
+.main_info{
+	position:relative;
+	margin:25px 9px 10px 9px;
+	min-height: 250px;
+}
+
+.main_info2{
+	position:relative;
+	margin:0 29px 10px 29px; 
+	min-height: 30px;
+}
+
+.main_info2 span.point{
+	font-weight: bold;
+	color: #ff0000;
+}
+
+#settle, #news_notice{ width:440px;}
+#settle{ float:left; margin:0 10px 0 20px;}
+#news_notice{ float:right; margin:0 20px 0 10px;}
+
+.main_info table caption, .main_info2 table caption {
+	background-image: url(../images/common/icon_blue.gif);
+	background-repeat: no-repeat;
+	background-position: left top;	
+	padding-left:20px;
+	color: #313391;
+	text-align:left;
+	font-weight: bold;	
+	height: 20px;	
+	
+}
+
+/* main table +more */
+.main_info table caption .more{ padding-left: 260px; }
+.main_info table caption .more a { text-decoration:none; color: #313391;}
+.main_info table caption .more a:hover { color: #00a4de; }
+
+.main_info tbody th, .main_info tbody td {
+	text-align: center;
+}
+
+.main_info tbody td.right {
+	text-align: right;
+}
+
+.main_info td.contxt {
+	background-image: url(../images/main/icon_notice_new.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:25px;
+	text-align:left;
+	color: #333;
+}
+
+.main_info td.left {	
+	text-align:left;
+	padding-left:25px;
+}
+
+.gray { color:#646464;}
+.gray_b { font-weight:bold; color:#646464;}
+.blue_b { font-weight:bold; color:#2760ad; line-height:40px;}

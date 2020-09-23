@@ -1,0 +1,101 @@
+/*
+ * 브라우저체크용 우선 여기에다가 개발
+ * 2015.09.10 hymin25 
+ */
+ 
+
+// 20150910 added
+//function getBrowserinfo(){
+	
+	
+	// os, browser, version
+	var nuA = navigator.userAgent;
+	var mobile = nuA.match(/Android|Mobile|iP(hone|od|ad)|Windows Phone|Windows CE|Symbian|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|POLARIS|Blazer|Dolfin|Dolphin|Skyfire|Zune|SonyEricsson|lgtelecom|nokia/i);
+	var bpOS = '';
+	var brs = '';
+	var brsver = '';
+	
+	// check os
+	if (mobile) {	// 모바일 기기별 체크
+		if(nuA.match(/iPhone|iPad|iPod/i)) {
+			bpOS="iOS";
+		}else if(nuA.match(/Android/i)){
+			bpOS="Android";
+		}else if(nuA.match(/BlackBerry/i)){
+			bpOS="BlackBerry";
+		}else if(nuA.match(/Opera M(obi|ini)/i)){
+			bpOS="Opera";
+		}else if(nuA.match(/IEMobile/i) || nuA.match(/Windows Phone/i)){
+			bpOS="WinMob";
+		}else{
+			bpOS="Etc";
+		}
+	}else{
+		
+		if (navigator.appVersion.indexOf("Mac")!=-1) 				bpOS="MacOS";
+		else if (navigator.appVersion.indexOf("X11")!=-1) 	bpOS="UNIX";
+		else if (navigator.appVersion.indexOf("Linux")!=-1) bpOS="Linux";
+		
+		if(nuA.indexOf('Windows NT 5.1') != -1){
+			bpOS="WinXP";
+    }else if(nuA.indexOf('Windows NT 6.0') != -1){
+    	bpOS="WinVista";
+    }else if(nuA.indexOf('Windows NT 6.1') != -1){
+    	bpOS="Win7";
+    }else if(nuA.indexOf('Windows NT 6.3') != -1){
+    	bpOS="Win8";
+    }else if(nuA.indexOf('Windows NT 10.0') != -1){
+    	bpOS="Win10";
+    }
+	}
+	
+	//check browser
+	var rv = -1;
+	var agt = nuA.toLowerCase();
+	
+  //IE 11,10,9,8
+  var trident = nuA.match(/Trident\/(\d.\d)/i);
+  if( trident != null ){
+  	if( trident[1] == "7.0" ) brs = "IE11";
+  	else if( trident[1] == "6.0" ) brs = "IE10";
+  	else if( trident[1] == "5.0" ) brs = "IE9";
+  	else if( trident[1] == "4.0" ) brs = "IE8";
+  }else if (nuA.indexOf('MSIE 7.0') != -1) {
+  	brs = "IE7";
+		if (nuA.indexOf("Trident/7.0") != -1 || (nuA.indexOf("NT 10.0;") != -1 && nuA.indexOf("Trident/8.0") != -1)) {
+			brs = 'IE11(cp)';
+		} else if (nuA.indexOf('Trident/6.0') != -1) {
+			brs = 'IE10(cp)';
+    } else if (nuA.indexOf('Trident/5.0') != -1) {
+    	brs = 'IE9(cp)';
+    }
+	} else if (nuA.indexOf('MSIE 6.0') != -1) {
+		brs = 'IE6';	
+	}else{
+  	// other
+  	if (agt.indexOf("chrome") != -1) brs = 'Chrome';
+  	else if (agt.indexOf("firefox") != -1) brs = 'Firefox'; 
+  	else if (agt.indexOf('edge') != -1) brs = 'Edge';
+    else if (agt.indexOf("opera") != -1 || agt.indexOf("opr") != -1) brs = 'Opera'; 
+    else if (agt.indexOf("safari") != -1) brs = 'Safari'; 
+    else if (agt.indexOf("staroffice") != -1) brs = 'Star Office'; 
+    else if (agt.indexOf("webtv") != -1) brs = 'WebTV'; 
+    else if (agt.indexOf("beonex") != -1) brs = 'Beonex'; 
+    else if (agt.indexOf("chimera") != -1) brs = 'Chimera'; 
+    else if (agt.indexOf("netpositive") != -1) brs = 'NetPositive'; 
+    else if (agt.indexOf("phoenix") != -1) brs = 'Phoenix'; 
+    else if (agt.indexOf("skipstone") != -1) brs = 'SkipStone'; 
+    else if (agt.indexOf("netscape") != -1) brs = 'Netscape'; 
+    else if (agt.indexOf("mozilla/5.0") != -1) brs = 'Mozilla';
+    else if (agt.indexOf('swing') != -1) brs = 'Swing';
+  }
+  
+	document.write(''
+	 +'OS name  = '+bpOS+'<br>'
+	 +'Browser name  = '+brs+'<br>'
+	 +'navigator.appName = '+navigator.appName+'<br>'
+	 +'navigator.userAgent = '+navigator.userAgent+'<br>'
+	) 
+	
+	
+//}

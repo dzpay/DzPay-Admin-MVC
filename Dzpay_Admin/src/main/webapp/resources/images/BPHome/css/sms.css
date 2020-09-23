@@ -1,0 +1,206 @@
+@charset "euc-kr";
+/* CSS Document */
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+input[type=text]{
+	height:15px;
+	border:1px #919191 solid;
+}
+
+div, p{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 100%;
+    margin:0;
+	padding:0;
+    position: absolute;
+    text-align:center;
+	font-size: 0.75em;
+	line-height: 1.2em;
+	color: #333;
+	background-color:#d0dae2;
+	font-family: Verdana, Geneva, Dotum, "µ¸¿ò", Helvetica, sans-serif;
+}
+
+hr{	display: none; }
+
+input:hover{ border-color: #4d90fe;}
+
+img {border:0;}
+
+textarea{
+	border:0;
+	width:99%;
+}
+
+/* Button Common */
+.button,
+.button *{ 
+	position:relative; margin:0; padding:0; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0;
+	font-size:12px; 
+	font-family: Verdana, Geneva, Dotum, "µ¸¿ò", Helvetica, sans-serif;
+	font-weight: bold;	
+	white-space:nowrap; background:url(/Modules/BPHome/images/button.gif) no-repeat; vertical-align:top; overflow:visible; color:#333;}
+.button { margin-right:4px;}
+.button *{ left:4px; cursor:pointer; _cursor:hand;}
+
+/* Button Size = medium | large | xLarge | small */
+.button.large, .button.large *{ height:30px; line-height:30px;}
+.button.large { background-position:left -30px;}
+.button.large *{ padding:0 10px 0 6px; font-size:16px; background-position:right -30px;}
+
+/* Button Hover */
+.button *:hover,
+.button *:active,
+.button *:focus{ color:#3398c3;}
+
+#smsTbl{
+	float:left;
+	width:198px;
+	border:2px solid #2b6cb3;
+	padding: 0;
+	margin: 20px;
+}
+#smsTbl2{
+	text-align: left;
+	float:left;
+	width:430px;
+	/*border:2px solid #2b6cb3;*/
+	padding: 0;
+	margin: 20px 20px 20px 0;
+}
+
+#smsTbl th, #smsTbl tr, #smsTbl td{
+	border: none;	
+}
+#smsTbl tr.top1{
+	height:16px;	
+	background-color: #3381d3;
+	background-image: url(/Modules/BPHome/images/sms_head.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#smsTbl tr.bottom1{	
+	background-color: #3381d3;	
+	height:30px;
+	color: #fff;
+}
+
+#smsTbl td.message{
+	padding: 0;
+	background-color: #e2f0f9;
+}
+
+#smsTbl input[type=submit]{
+	width:168px;
+}
+
+textarea {
+	background-color: #e2f0f9;
+	height: 140px;
+}
+
+
+
+
+
+
+
+
+
+/* list table css */
+table { width:100%; border-collapse: collapse; }
+caption { font-size: 1em; color: #444; }
+td, th {
+	text-align: left;
+	padding: .6em .4em;
+	vertical-align: middle;
+}
+
+.center{ text-align: center; }
+.right{ text-align: right; }
+
+thead th, tfoot th, tfoot td {
+	border: 1px solid #113c8a;
+	border-width: 1px 0;
+	background: #e6f4fb;
+	color: #444;
+	font-weight: bold;
+}
+
+thead th{
+	text-align: center;
+}
+
+tbody th{
+	text-align: center;
+}
+
+tbody tr {
+	background: #fcfcff;
+}
+
+
+tbody td, tbody th {
+	border-bottom: 1px solid #779;
+}
+
+tbody td{
+	/* ¸»ÁÙÀÓÇ¥ */
+	overflow:hidden;
+	/*	
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    */
+}
+
+tbody tr.odd td, tbody tr.odd th {
+	border-color: #977;
+}
+
+tbody tr:last-child td, tbody tr:last-child th {
+	border: none;
+}
+
+tbody tr a {
+	color: #449;
+	text-decoration: none;
+}
+
+tbody tr.odd a {
+	color: #944;
+}
+
+tbody a:visited {
+	/*text-decoration: line-through;*/
+}
+
+tbody tr a:hover {
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	color: #009;
+}
+
+tbody tr.odd a:hover {
+	color: #900;
+}
+
+/* page navi ÀÌ¿ë */
+tfoot tr a {
+	color: #df6d00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+tfoot tr a:hover, a:active {
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	color: #ff0000;
+}

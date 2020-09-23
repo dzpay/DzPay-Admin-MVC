@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/dzpay/admin/common/filter/JwtAuthenticationFilter.java=UTF-8
+encoding//src/main/java/com/dzpay/admin/common/service/OfficeAdminServiceImpl.java=UTF-8
+encoding//src/main/java/com/dzpay/admin/controller/mall/MallController.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/test/home.jsp=UTF-8
+encoding//src/main/webapp/resources/js/apply/mallApply.js=euc-kr
+encoding//src/main/webapp/resources/js/default.js=euc-kr
+encoding//src/main/webapp/resources/js/login.js=EUC-KR
+encoding//src/main/webapp/resources/js/master/default.js=EUC-KR

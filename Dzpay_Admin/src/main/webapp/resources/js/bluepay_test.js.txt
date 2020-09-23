@@ -1,0 +1,221 @@
+/**
+* bluepay.js
+* Copyright Bankwell Inc.
+*/
+ 
+var elementArray = [];
+var bp_popwin = '';
+
+/**
+ * pay call
+ */
+function doBluePay(form) {
+	setElementsArray(form);
+	
+	callBluePayPG_PGNW();
+}
+
+function setElementsArray(f) {
+	var i;
+	var FormName = new Array();
+	var FormType = new Array();
+	var FormValue = new Array();
+	
+	var count = f.elements.length;
+		
+	for(i=0; i<count; i++) {
+		FormName[i] = f.elements[i].name;
+		FormType[i] = f.elements[i].type;
+		FormValue[i] = f.elements[i].value;
+		
+		if(FormType[i] == "select-one"){
+			FormValue[i] = f.elements[FormName[i]].value;
+		}else{
+			if (f.elements[FormName[i]][0]) {
+				FormValue[i] = f.elements[FormName[i]][0].value;
+			}
+		} 
+		
+		if(FormName[i]) {
+			if (FormValue[i] == 'undefined') FormValue[i] = '';
+			elementArray[FormName[i]] = FormValue[i];
+		}
+	}
+}
+
+function getBluePayArray(param_name) {
+	var f = document.BLUEPAY_FORM;
+	var param_value;
+	
+	if(elementArray[param_name]){		
+		if (elementArray[param_name] == 'undefined'){
+			param_value = '';
+		}else{
+			param_value = elementArray[param_name];
+		}
+	}else if (f.elements[param_name]) {
+		if (f.elements[param_name][0]) {
+			param_value = f.elements[param_name][0].value;
+		}		
+		param_value = f.elements[param_name].value;
+	}else {
+		param_value = '';
+	}
+	return param_value;
+}
+
+function setBluePayArray(param_name, param_value) {
+	var f = document.BLUEPAY_FORM;
+	if (f.elements[param_name]) {
+		if (f.elements[param_name][0]) {
+			f.elements[param_name][0].value = param_value;
+		}
+		f.elements[param_name].value = param_value;		
+	}
+	elementArray[param_name] = param_value;	// array reset
+}
+
+function set_ordr_idxx(){
+	var today = new Date();
+	var year  = today.getFullYear();
+	var month = today.getMonth()+ 1;
+	var date  = today.getDate();
+	var time  = today.getTime();
+	
+	if(parseInt(month) < 10) {
+		month = "0" + month;
+	}
+	
+	var vOrderID = year + "" + month + "" + date + "" + time;
+	setBluePayArray('ordr_idxx', vOrderID);	
+}
+
+function callBluePayPG_PGNW() {
+	if(getBluePayArray('ordr_idxx') == ''){
+		set_ordr_idxx();
+	}	
+	
+	if(getBluePayArray('Pay_Type') == 'PBILL'){
+		setBluePayArray('Pay_Type', 'ARS');
+	}
+	
+	setBluePayArray('rcvr_zipx', getBluePayArray('rcvr_zipx').replace("-",""));
+	setBluePayArray('good_name', trim_PGNW(getBluePayArray('good_name')));
+
+	var chkUrl = document.URL;
+	var codeVer = '.php';	
+	var checkProt = 'http:';	
+	
+	if(chkUrl.indexOf('https://') > -1){
+		checkProt = 'https:';
+	}
+	
+	if(chkUrl.indexOf('.asp') > -1){
+		codeVer = '.asp';
+	}else if(chkUrl.indexOf('.php') > -1){
+		codeVer = '.php';
+	}else if(chkUrl.indexOf('.jsp') > -1){
+		codeVer = '.jsp';
+	}
+	
+	var checkPort = window.location.port;
+	if(checkPort == ''){
+		checkPort = '';
+	}else{
+		checkPort = ':' + window.location.port;
+	}
+	
+	var shopURL = checkProt + '//' + document.domain + checkPort + '/bluepay/pop_Result' + codeVer;
+	
+	if(getBluePayArray('Result_URL') == ''){
+		setBluePayArray('Result_URL', shopURL);
+	}else if(getBluePayArray('Result_URL').indexOf(document.domain) > -1){	// 도메인 중복의 경우(결제버튼2번호출), pass
+		setBluePayArray('Result_URL', getBluePayArray('Result_URL'));
+	}else{
+		var tempUrl = checkProt + '//' + document.domain + checkPort + getBluePayArray('Result_URL');
+		setBluePayArray('Result_URL', tempUrl);		
+	}	
+	
+	document.charset='euc-kr';	
+	openWindow_PGNW('', 390, 596);
+	
+}
+
+function openWindow_PGNW(target, width, height) {
+	var leftpos = screen.width  / 2 - ( width / 2 );
+	var toppos  = screen.height / 2 - ( height / 2 );
+        
+	var winopts  = "width=" + width +", height=" + height + ", toolbar=no, status=no, statusbar=no, menubar=no, scrollbars=no, resizable=no, directories=no";
+	var position = ",left=" + leftpos + ",top=" + toppos;
+  
+	bp_popwin = window.open('about:blank','POPWIN', winopts + position);
+  
+	document.BLUEPAY_FORM.target = "POPWIN";
+	document.BLUEPAY_FORM.action = 'https://testpay.duzonpay.com/Pay/B_BluePay_test.jsp';
+	document.BLUEPAY_FORM.submit();
+	
+	bp_popwin.focus();
+	
+	if (bp_popwin.opener == null) bp_popwin.opener = window;
+	bp_popwin.opener.name = "bp3opener";
+	
+	if(getBluePayArray('charset') == 'UTF-8' || getBluePayArray('charset') == 'utf-8'){
+		document.charset='UTF-8';
+	}
+}
+
+function trim_PGNW(str) {
+	str = str.replace(/(^\s*)|(\s*$)/gi, "");
+	return str;
+}
+
+function Pay_Result_PGNW() {
+	
+	if(document.BP_RSLT_FORM.BKW_RESULTCD.value.length < 1 ){
+		setBluePayArrayOpener_PGNW('BKW_RESULTCD','9999');
+	}else{
+		setBluePayArrayOpener_PGNW('BKW_RESULTCD',document.BP_RSLT_FORM.BKW_RESULTCD.value);
+	}
+	
+	setBluePayArrayOpener_PGNW('BKW_RESULTMSG',document.BP_RSLT_FORM.BKW_RESULTMSG.value);
+	setBluePayArrayOpener_PGNW('BKW_TRADENO',document.BP_RSLT_FORM.BKW_TRADENO.value);
+	setBluePayArrayOpener_PGNW('BKW_PAYTYPE',document.BP_RSLT_FORM.BKW_PAYTYPE.value);
+	
+	setBluePayArrayOpener_PGNW('BKW_BANKNM',document.BP_RSLT_FORM.BKW_BANKNM.value);
+	setBluePayArrayOpener_PGNW('BKW_BANKACCOUNT',document.BP_RSLT_FORM.BKW_BANKACCOUNT.value);
+	
+	setBluePayArrayOpener_PGNW('BKW_PHONENO',document.BP_RSLT_FORM.BKW_PHONENO.value);
+	setBluePayArrayOpener_PGNW('BKW_PHONECOMMTYPE',document.BP_RSLT_FORM.BKW_PHONECOMMTYPE.value);
+	
+	setBluePayArrayOpener_PGNW('BKW_AUTHNO',document.BP_RSLT_FORM.BKW_AUTHNO.value);
+	setBluePayArrayOpener_PGNW('BKW_QUOTA',document.BP_RSLT_FORM.BKW_QUOTA.value);
+	setBluePayArrayOpener_PGNW('BKW_CARDNAME',document.BP_RSLT_FORM.BKW_CARDNAME.value);
+	
+	if (document.BP_RSLT_FORM.elements['BKW_SHA256']) {
+		setBluePayArrayOpener_PGNW('BKW_SHA256',document.BP_RSLT_FORM.BKW_SHA256.value);
+	}
+	
+	if (document.BP_RSLT_FORM.elements['BKW_AUTHDATE']) {
+		setBluePayArrayOpener_PGNW('BKW_AUTHDATE',document.BP_RSLT_FORM.BKW_AUTHDATE.value);
+	}
+	
+	if (document.BP_RSLT_FORM.elements['BKW_AMOUNT']) {
+		setBluePayArrayOpener_PGNW('BKW_AMOUNT',document.BP_RSLT_FORM.BKW_AMOUNT.value);
+	}
+	
+	opener.getBluepay_Result();
+	
+	window.close();	
+}
+
+function setBluePayArrayOpener_PGNW(param_name, param_value) {
+	var f = opener.document.BLUEPAY_FORM;
+	
+	if (f.elements[param_name]) {
+		if (f.elements[param_name][0]) {
+			f.elements[param_name][0].value = param_value;
+		}else {
+			f.elements[param_name].value = param_value;
+		}
+	}
+}

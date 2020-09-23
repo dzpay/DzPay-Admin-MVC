@@ -1,0 +1,268 @@
+/* 
+manage/CSS/popup.css 
+*/
+
+html, body {
+	width:100%;
+    height: 100%;
+    min-width: 100%;    
+    margin:0;
+	padding:0;
+    position: absolute;
+    background-color : #5084be;
+    
+    font-size: 12px;	
+	color: #333;
+    font-family: Verdana, Geneva, Dotum, "µ¸¿ò", Helvetica, sans-serif;
+    
+    /* resize 
+    overflow-y:auto; 
+    overflow-x:hidden;
+    */
+}
+
+#popup{
+	background-color: #fff;
+	margin:5px;	
+}
+
+#header {
+	width:100%;
+	height:40px;
+	background-color : #5084be;
+	background-repeat: repeat-x;
+	background-position: left top;
+	margin:0;
+}
+
+#header span.title{
+	font-weight:bold;
+	color:#fff;
+	padding : 10px;
+	position: absolute;
+}
+
+#contents {
+	margin:0;
+	padding: 10px;
+}
+
+#footer{
+	width:100%;
+	height:5px;
+	background-color : #5084be;
+	background-repeat: repeat-x;
+	background-position: left top;
+	margin:0;
+}
+	
+#button_bar {
+	padding:10px 0 5px 0;
+	text-align: right;
+}
+
+/* single table css */
+#single thead th{ text-align: left; }
+#single tbody th{ 
+	text-align: right;
+	background: #dde0e2;
+}
+#single tbody th, #single tbody td{
+	border-right: 1px solid #779;
+	/*width:25%;*/
+}
+#single tbody td.border_none{ border-right:none; }
+
+
+/* condition table css */
+#condition thead th{
+	text-align: center;
+}
+
+#condition tbody td.con_btn{
+	text-align: center;
+	vertical-align: middle;
+}
+#condition tbody tr:hover{
+	background: none;
+}
+
+#condition td, th {
+	padding: .4em .4em;
+	vertical-align: middle;
+}
+
+/* list table css */
+table { width:100%; border-collapse: collapse; margin:5px 0;}
+caption { font-size: 1em; color: #444; }
+caption.title {
+	background-image: url(/IMAGES/bankwell/icon_blue.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left:20px;
+	color: #313391;
+	text-align:left;
+	font-weight: bold;	
+	height: 20px;
+}
+
+td, th {
+	text-align: left;
+	padding: .6em .4em;
+	vertical-align: middle;
+}
+
+.center{ text-align: center; }
+.right{ text-align: right; }
+.form {
+    color: #535353;
+    font-size: 12px;
+    height: 15px;
+    align: absmiddle;
+    vertical-align: middle;
+}
+
+.btn_img{
+	align: absmiddle;
+	vertical-align: middle;
+	cursor: pointer;
+	
+}
+
+thead th, tfoot th, tfoot td {
+	border: 1px solid #113c8a;
+	border-width: 1px 0;
+	background: #e6f4fb;
+	color: #444;
+	font-weight: bold;
+}
+
+thead th{
+	text-align: center;
+}
+
+tbody th{
+	text-align: center;
+}
+
+tbody tr {
+	background: #fcfcff;
+}
+
+tbody tr.odd {
+	background: #fffcfc;
+}
+
+tbody tr:hover {
+	background: #f0f0fe;
+}
+
+tbody tr.odd:hover {
+	background-color: #fef0f0;
+}
+
+tbody td, tbody th {
+	border-bottom: 1px solid #779;
+}
+
+tbody tr.odd td, tbody tr.odd th {
+	border-color: #977;
+}
+
+tbody tr:last-child td, tbody tr:last-child th {
+	border: none;
+}
+
+tbody tr a {
+	color: #449;
+	text-decoration: none;
+}
+
+tbody tr.odd a {
+	color: #944;
+}
+
+tbody a:visited {
+	/*text-decoration: line-through;*/
+}
+
+tbody tr a:hover {
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	color: #009;
+}
+
+tbody tr.odd a:hover {
+	color: #900;
+}
+
+/* page navi ÀÌ¿ë */
+tfoot tr a {
+	color: #df6d00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+tfoot tr a:hover, a:active {
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	color: #ff0000;
+}
+
+/* Button Common */
+.button,
+.button *{ 
+	position:relative; margin:0; padding:0; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0;
+	font-size:12px; 
+	font-family: Verdana, Geneva, Dotum, "µ¸¿ò", Helvetica, sans-serif;
+	font-weight: bold;	
+	white-space:nowrap; background:url(/IMAGES/bankwell/button.gif) no-repeat; vertical-align:top; overflow:visible; color:#333;}
+.button { margin-right:4px;}
+.button *{ left:4px; cursor:pointer; _cursor:hand;}
+
+/* Button Size = medium | large | xLarge | small */
+.button.medium, .button.medium *{ height:24px; line-height:24px;}
+.button.large, .button.large *{ height:30px; line-height:30px;}
+.button.xLarge, .button.xLarge *{ height:36px; line-height:36px;}
+.button.small, .button.small *{ height:19px; line-height:19px;}
+.button.medium { background-position:left 0;}
+.button.large { background-position:left -30px;}
+.button.xLarge { background-position:left -65px;}
+.button.small { background-position:left -106px;}
+.button.medium *{ padding:0 10px 0 6px; font-size:12px; background-position:right top;}
+.button.large *{ padding:0 10px 0 6px; font-size:16px; background-position:right -30px;}
+.button.xLarge *{ padding:0 10px 0 6px; font-size:20px; background-position:right -65px;}
+.button.small *{ padding:0 6px 0 2px; font-size:11px; background-position:right -106px;}
+
+/* Button Hover */
+.button *:hover,
+.button *:active,
+.button *:focus{ color:#3398c3;}
+
+/* Button Strong */
+.button.strong *{ font-weight:bold !important;}
+
+/* Button Icon Variation */
+.button.icon *{ padding-left:20px;}
+.button.small.icon *{ padding-left:16px;}
+.button.icon span{ width:20px; margin-right:-20px; padding:0 !important;}
+.button.medium .check{ background-position:4px -150px;}
+.button.large .check{ background-position:4px -146px;}
+.button.xLarge .check{ background-position:5px -144px;}
+.button.small .check{ background-position:3px -153px;}
+.button.medium .add{ background-position:-16px -150px;}
+.button.large .add{ background-position:-14px -146px;}
+.button.xLarge .add{ background-position:-14px -144px;}
+.button.small .add{ background-position:-18px -153px;}
+.button.medium .delete{ background-position:-34px -150px;}
+.button.large .delete{ background-position:-34px -146px;}
+.button.xLarge .delete{ background-position:-34px -144px;}
+.button.small .delete{ background-position:-37px -153px;}
+.button.medium .calendar{ background-position:-56px -150px;}
+.button.large .calendar{ background-position:-56px -146px;}
+.button.xLarge .calendar{ background-position:-56px -144px;}
+.button.small .calendar{ background-position:-59px -153px;}
+.button.medium .refresh{ background-position:-76px -150px;}
+.button.large .refresh{ background-position:-76px -146px;}
+.button.xLarge .refresh{ background-position:-76px -144px;}
+.button.small .refresh{ background-position:-79px -153px;}

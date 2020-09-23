@@ -1,0 +1,30 @@
+A:link   { font-family: ±¼¸², ±¼¸²Ã¼, arial, helvetica; font-size: 9pt; color: #383838 ; text-decoration: none}
+A:visited{ font-family: ±¼¸², ±¼¸²Ã¼, arial, helvetica; font-size: 9pt; color: #383838  ; text-decoration: none}
+A:active { font-family: ±¼¸², ±¼¸²Ã¼, arial, helvetica; font-size: 9pt; color: #383838 ; text-decoration: none}
+A:hover  { font-family: ±¼¸², ±¼¸²Ã¼, arial, helvetica; font-size: 9pt; color: #383838 ; text-decoration: none}
+
+td{font-size:9pt; font-family:"±¼¸²", "±¼¸²Ã¼",  "arial", "helvetica"; color: 383838; line-height: 20px}
+body    { font-size:9pt; font-family:"±¼¸²", "±¼¸²Ã¼", "arial", "helvetica"; text-decoration: none; color: #383838; line-height: 20px} 
+
+
+select { background-color:white;border:1px solid #B0B0B0 ; font-family:±¼¸²; color: #383838; font-size:12px;padding-top:1px; padding-left:1px;padding-right:1px;padding-bottom:1px}
+
+.small  {font-family: µ¸¿ò, µ¸¿òÃ¼; font-size:8pt; }
+.small  A:link   { font-family: µ¸¿ò, µ¸¿òÃ¼, arial, helvetica; font-size: 8pt; color: #666666 ; text-decoration: none}
+.small  A:visited{ font-family: µ¸¿ò, µ¸¿òÃ¼, Seoul, arial, helvetica; font-size: 8pt; color: #666666  ; text-decoration: none}
+.small  A:active { font-family: µ¸¿ò, µ¸¿òÃ¼, Seoul, arial, helvetica; font-size: 8pt; color: #949494; text-decoration: none}
+.small  A:hover  { font-family: µ¸¿ò, µ¸¿òÃ¼, Seoul, arial, helvetica; font-size: 8pt; color: #949494 ; text-decoration: none}
+
+.input  {font-family: ±¼¸², ±¼¸²Ã¼, arial, helvetica; font-size: 9pt; color: #666666; }
+
+.menu  {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 10pt; color: #ffffff; font-weight: bold  }
+.menu   A:link   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 10pt; color: #ffffff; font-weight: bold; text-decoration: underline  }
+.menu   A:visited   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 10pt; color: #ffffff; font-weight: bold; text-decoration: none  }
+.menu   A:active   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 10pt; color: #ffffff; font-weight: bold; text-decoration: none  }
+.menu   A:hover   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 10pt; color: #ffffff; font-weight: bold; text-decoration: none  }
+
+.smenu  {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 9pt; color: #000000;  }
+.smenu   A:link   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 9pt; color: #000000; text-decoration: underline  }
+.smenu   A:visited   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 9pt; color: #000000; text-decoration: none  }
+.smenu   A:active   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 9pt; color: #000000; text-decoration: none  }
+.smenu   A:hover   {font-family: ±¼¸², ±¼¸²Ã¼; font-size: 9pt; color: #000000; text-decoration: none  }

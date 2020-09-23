@@ -1,0 +1,327 @@
+// hymin25) start 
+function goCancel() {
+	if( confirm('결제를 취소하시겠습니까?')){
+		
+		// 결제취소시에도 action을 던지도록 Last_Result 와 동일한 효과
+		
+		document.forms[0].target = "_self"; 
+    document.forms[0].method = "POST";   //get
+	  document.forms[0].action = document.forms[0].Result_URL.value + "?BKW_RESULTCD=9805&BKW_RESULTMSG=거래중단";
+	  document.forms[0].submit();
+		
+	}
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function goPage(page_name) {
+	document.forms[0].sel_menu.value = page_name;
+	document.forms[0].action = page_name;
+	document.forms[0].submit();
+//	location.href=page_name;
+}
+
+
+function moveNext1()
+{
+	if( document.forms[0].card_no1.value.length == 4 )
+		document.forms[0].card_no2.focus();
+}
+
+function moveNext2()
+{
+	if( document.forms[0].card_no2.value.length == 4 )
+		document.forms[0].card_no3.focus();
+}
+
+function moveNext3()
+{
+	if( document.forms[0].card_no3.value.length == 4 ) 
+		document.forms[0].card_no4.focus();
+}
+
+function checkNum()
+{
+	if(window.event.keyCode < 48 || window.event.keyCode >57) {
+		window.event.returnValue = false;
+	}
+}
+
+
+/*
+	this_name : 체크할 이름
+	move_name : 포커스 이동할 이름
+	move_name : 체크할 길이
+
+	text 값 길이 체크후 포커스이동때 적합
+*/
+function moveNextText(chk_name, move_name, move_length) 
+{
+	if( eval(chk_name).value.length == move_length) {
+		moveNext = eval("document.all." + move_name);
+		moveNext.focus();
+	}
+}
+
+/*
+	move_name : 포커스 이동할 이름
+
+	예) OnChange Event에 적합
+*/
+function moveNextSelect(move_name) 
+{
+	moveNext = eval("document.all." + move_name);
+	moveNext.focus();
+}
+
+
+/*
+
+IE 5.0에서 지원 안되는 스크립트
+function checkemail(email){
+
+	var filter=/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+
+	if ( filter.test(email) ) {
+		return true;
+	}else{
+		alert("정확한 Email주소를 입력하여 주세요!");
+		return false;
+	}
+}
+*/
+
+function checkemail(email)
+{
+	var bfind 		; 	
+	var oneChar 	;
+	var nstart		;
+	var nend		;
+	var inputStr = email;
+
+	for ( i = 0 ; i< inputStr.length ; i++ )
+	{
+		oneChar = inputStr.charAt(i);
+		if( oneChar == '@' )
+		{
+			nstart	=	i		;
+			for ( j = i ;  j < inputStr.length ; j++)
+			{
+				oneChar = inputStr.charAt(j);
+				if (oneChar == '.') 
+				{
+					bfind	=	true	;
+					nend	=	j		;
+				}
+			}
+		}
+	}
+
+	if( bfind )
+	{
+		return true;
+	}			
+	else
+	{
+		alert("정확한 Email주소를 입력하여 주세요!");
+		return false;	
+	}
+
+}
+
+
+// 1이면 보이고 0이면 안 보여줌
+function process(sw) {
+	form = document.forms[0];
+
+	var img_width = document.all.img_pro.width;
+
+	var leftpos = (document.body.offsetWidth  / 2) - ( parseInt(img_width) / 2 ); 
+	var toppos  = document.body.offsetHeight / 2
+
+	document.all["proc"].style.left = leftpos;
+	document.all["proc"].style.top  = toppos;
+
+	if(sw == 1) {
+		document.all["proc"].style.visibility = 'visible';
+	}else{
+		document.all["proc"].style.visibility = 'hidden';
+	}
+}
+
+function process_y(sw, y) {
+	form = document.forms[0];
+
+	var img_width = document.all.img_pro.width;
+
+	var leftpos = (document.body.offsetWidth  / 2) - ( parseInt(img_width) / 2 ); 
+	var toppos  = document.body.offsetHeight / 2 - y
+
+	document.all["proc"].style.left = leftpos;
+	document.all["proc"].style.top  = toppos;
+
+	if(sw == 1) {
+		document.all["proc"].style.visibility = 'visible';
+	}else{
+		document.all["proc"].style.visibility = 'hidden';
+	}
+}
+
+function cntrcheck() {  
+alert(event.keyCode);
+
+	var keyValue = event.keyCode;  
+	if (keyValue == '17')  
+	{  
+		alert("ctrl 키는 쓰실수 없습니다.");  
+	}
+}
+
+
+
+// Object의 Value가 비어있는지 확인
+function isEmpty(obj)
+{
+   var inputStr = obj.value;
+   var i;	
+   for ( i = 0 ; i < inputStr.length ; i++ )
+   {
+      if ( inputStr.substring( i, i+1 ) != " " )
+         return false;
+   }
+   return true;
+}
+
+// Error Message를 보여주고 Error가 난 Field로 Focusing한다
+function ErrMsg( obj, msg ) {
+    alert( msg );
+    obj.focus();
+    obj.select();
+    return false;
+}
+
+// Object의 Value가 숫자인지 확인
+function isDigit(obj)
+{
+    inputStr = obj.value;
+    var i;
+    if(inputStr.length == 0)
+    	return false;
+    for ( i = 0; i < inputStr.length; i++){
+         var oneChar = inputStr.charAt(i)
+         if (oneChar < "0" || oneChar > "9")
+              return false;
+    }
+    return true;
+}
+// Object의 Value가 숫자인지 확인
+function isDigitZip(obj)
+{
+    inputStr = obj.value;
+    var i;
+    if(inputStr.length == 0)
+    	return false;
+    for ( i = 0; i < inputStr.length; i++){
+         var oneChar = inputStr.charAt(i)
+         if (oneChar < "0" || oneChar > "9" ){
+         	if(oneChar != "-" )
+              	return false;
+         }
+    }
+    return true;
+}
+
+// Object의 Value가 실수인지 확인
+function isFloat(obj)
+{
+    inputStr = obj.value;
+    var i;
+    var j = 0;
+    var k = 0;
+    if(inputStr.length == 0)
+    	return false;
+    	
+    for ( i = 0; i < inputStr.length; i++){
+         var oneChar = inputStr.charAt(i)
+         if (oneChar = "."){
+             if (j == 0){
+             	j = 1;
+             }
+             else {
+             	return false;
+             }
+         }
+         else
+         if (oneChar < "0" || oneChar > "9"){
+              return false;         
+         }
+    }
+    return true;
+}
+
+function hangul_check(tmp_name, max_len) 
+{
+    var tmpStr = new String(tmp_name);
+    var tmpLen = 0;
+    var onechar;
+    var tcount = 0;
+    var max_length = (parseInt(max_len) * 2);   //한글은 2Byte문자 이므로 *2를 하였다.
+
+    tmpLen = tmpStr.length;
+
+    for (k = 0; k < tmpLen; k++) {
+        onechar = tmpStr.charAt(k);
+
+        if (escape(onechar).length > 4) {
+            tcount += 2;
+        }
+        else if (onechar!='\r') {
+            tcount++;
+        }
+    }
+
+    if( tcount > max_length ) {
+        return false;
+    }else{
+        return true;
+    }
+   
+}
+
+function Last_Result()
+{   
+        /*
+		alert(document.forms[0].Result_URL.value);
+        alert(document.forms[0].BKW_TRADENO.value);
+        alert(document.forms[0].BKW_AMOUNT.value);
+        alert(document.forms[0].BKW_BANKNM.value);
+		*/
+		
+		
+    document.forms[0].target = "_self"; 
+    document.forms[0].method = "POST";   //get
+	  document.forms[0].action = document.forms[0].Result_URL.value;
+		document.forms[0].submit();
+
+}

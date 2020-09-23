@@ -1,0 +1,58 @@
+/* CSS Document */
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;-webkit-text-size-adjust:none;font-family:nanum-square-r, "돋움",dotum,AppleGothic,sans-serif;}
+body,input,textarea,select,button,table{font-size:14px;line-height:1.5em;color:#4a4a4a;}
+img,fieldset{border:0;}
+img{vertical-align:middle;}
+ul,ol{list-style:none;}
+hr,legend,caption{display:none;}
+em,address{font-style:normal;}
+a{text-decoration:none;color:#4a4a4a;}
+a:hover,a:active,a:focus{text-decoration:none;}
+button,label{cursor:pointer;}
+table{border-collapse:collapse;empty-cells:show;}
+header,hgroup,article,nav,footer,figure,figcaption,canvas,section{display:block;}
+
+
+/* font */
+@font-face{
+font-family:'nanum-square-r';
+src:url('../font/nanumsquarer.eot');
+src:url('../font/nanumsquarer.eot?#iefix') format('embedded-opentype'),
+      url('../font/nanumsquarer.woff2') format('woff2'),
+      url('../font/nanumsquarer.woff') format('woff'),
+      url('../font/nanumsquarer.ttf') format('truetype'),
+      url('../font/nanumsquarer.svg#nanumsquarerregular') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+@font-face {
+font-family:'nanum-square-b';
+src:url('../font/nanumsquareb.eot');
+src:url('../font/nanumsquareb.eot?#iefix') format('embedded-opentype'),
+      url('../font/nanumsquareb.woff2') format('woff2'),
+      url('../font/nanumsquareb.woff') format('woff'),
+      url('../font/nanumsquareb.ttf') format('truetype'),
+      url('../font/nanumsquareb.svg#nanumsquarebregular') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+	
+.escro_popup>
+.title{padding:20px;background:#1c90fb;color:#fff;font-size:20px;font-weight:bold}
+.escro_popup>.content{border-bottom:1px solid #e0e0e0;padding:10px;text-align:left}
+.escro_popup>ul.content li{display:inline-block;vertical-align:middle}
+.escro_popup>.content>.left{padding:15px;border:1px solid #e0e0e0}
+.escro_popup>.content>.right{width:70%;margin-left:10px;text-align:left;font-size:14px}
+.escro_popup>.content>.right p{color:#0072bc;font-weight:bold;padding-top:10px}
+.escro_popup>.content table{width:100%}
+.escro_popup>.content table th,.escro_popup>.content table td{border:1px solid #e0e0e0;padding:10px}
+.escro_popup>.content table th{background:#efefef;color:#5a5a5a}
+.escro_popup>.content div.hint01{font-size:12px;color:#8a8a8a;text-align:left;margin-top:10px}
+.escro_form a.btn_blue,.escro_popup a.btn_blue{padding:7px 15px;background:#1c90fb;border:1px solid #1c90fb;color:#fff;border-radius:2px;display:inline-block}
+.escro_form a.btn_blue:hover,.escro_popup a.btn_blue:hover{background:#006dd2}
+.escro_popup>
+.btn_wrap{text-align:center;margin-top:10px}

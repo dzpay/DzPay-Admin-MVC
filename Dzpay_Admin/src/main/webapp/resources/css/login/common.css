@@ -1,0 +1,22 @@
+@charset "euc-kr";
+/* deco9 Design Team (http://www.deco9.co.kr) dalgona 2011.03.10 */ 
+
+/* bluepay 2015.05.26 herestayme */ 
+#sub_content_bluepay{float:left;width:700px;margin-top:10px}
+#sub_content_bluepay #substance{width:725px;padding:0 0 50px 43px;background:url()}
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'µ¸¿ò',Dotum,AppleGothic,sans-serif;font-size:12px;color:#333}
+
+
+
+/* margin-padding */
+.mt10		{margin-top:10px}
+
+
+
+
+.rule{font:normal 12px µ¸¿ò;color:#666;width:638px;height:200px;border:2px solid #f2f2f2;overflow:auto;padding:15px;line-height:1.5em}
+.rule_min{font:normal 12px µ¸¿ò;color:#666;width:638px;height:400px;border:2px solid #f2f2f2;overflow:auto;padding:15px;line-height:1.5em}
+

@@ -1,0 +1,115 @@
+                                                                                                                
+/*                                                                                                              
+ * Filename	:	viewSlip.css                                                                                      
+ * Function	:	결제내역 조회 css                                                                                 
+ * Version	:	                                                                                                  
+*/                                                                                                              
+                                                                                                                
+                                                                                          
+.btn01, .btn01 *{                                                                                               
+	width:125px; height:28px;                                                                                     
+	background:url("/Modules/BPHome/images/payment/btn01.png") no-repeat;                                                                 
+	margin:0; padding:0;                                                                                          
+	font-family: "돋움",Dotum,AppleGothic,sans-serif;                                                             
+	font-size:12px;                                                                                               
+	color:#606e7b;                                                                                                
+	position:relative; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0;
+	font-weight: bold;	                                                                                          
+	white-space:nowrap;  vertical-align:top; overflow:visible;	                                                  
+}                                                                                                               
+                                                                                                                
+.btn01 *{ cursor:pointer; _cursor:hand;}                                                                        
+                                                                                                                
+/* Button Hover */                                                                                              
+.btn01 *:hover,                                                                                                 
+.btn01 *:active,                                                                                                
+.btn01 *:focus{                                                                                                 
+	background:url("/Modules/BPHome/images/payment/btn01_hover.png") no-repeat;                                                           
+	color:#003399;                                                                                                
+}                                                                                                               
+                                                                                                                
+                                                                                                                
+/* images 관련 */                                                                                               
+img {                                                                                                           
+	border: 0px; margin: 0px; padding: 0px;                                                                       
+	}                                                                                                             
+	                                                                                                              
+img.hand {                                                                                                      
+	cursor:pointer;                                                                                               
+	}                                                                                                             
+                                                                                                                
+                                                                                                                
+body,input,textarea,select,button,table{                                                                        
+	//font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px;color:#333 
+     font-family:'나눔고딕',NanumGothic;font-size:12px;color:#333   	
+	}                                                                                                             
+                                                                                                                
+input.txtalign{                                                                                                 
+	text-align:right;                                                                                             
+	}                                                                                                             
+	                                                                                                              
+input.txtime{                                                                                                   
+	text-align:right;                                                                                             
+	ime-mode:disabled;                                                                                            
+	}                                                                                                             
+                                                                                                                
+BODY {                                                                                                          
+	background-color: #ffffff;	                                                                                  
+	width: 667px;                                                                                                 
+	margin-top:10px;                                                                                              
+	margin-left:10px;	                                                                                            
+}                                                                                                               
+                                                                                                                
+.title{                                                                                                         
+	font:bold 14px 나눔고딕;                                                                                          
+	text-align:left;                                                                                              
+	color:#18386f;                                                                                                
+	padding-top:6px;	                                                                                            
+}                                                                                                               
+.mt31 {margin-top:31px;}                                                                                        
+.mb5 {margin-bottom:5px;}                                                                                       
+                                                                                                                
+                                                                                                                
+                                                                                                                
+/*테이블 관련*/                                                                                                 
+#gradient-style {                                                                                               
+    border-collapse: collapse;                                                                                  
+    font-size: 12px;                                                                                            
+    text-align: center;                                                                                         
+    width: 657px;                                                                                               
+    border-bottom: 1px solid #003399;                                                                           
+    border-top: 1px solid #003399;                                                                              
+}                                                                                                               
+                                                                                                                
+#gradient-style th {                                                                                            
+  //  background: url("/Modules/BPHome/images/payment/gradhead.png") repeat-x scroll 0 0 #B9C9FE;        
+      background: url("/Modules/BPHome/images/payment/gradback.png") repeat-x scroll 0 0 #E8EDFF;                            
+    //border-bottom: 1px solid #003399;                                                                           
+   // color: #003399;                                                                                             
+    font-size: 12px;                                                                                            
+    padding: 5px;                                                                                               
+}                                                                                                               
+#gradient-style td {                                                                                            
+    //background: url("/Modules/BPHome/images/payment/gradback.png") repeat-x scroll 0 0 #E8EDFF;                                         
+    //border-bottom: 1px solid #003399;                                                                           
+   // border-top: 1px solid #FFFFFF;            // 테이블 중간라인.                                                                 
+    color: #666699;                                                                                             
+    padding: 7px;                                                                                               
+}                                                                                                               
+/*이미지버튼 테이블 관련*/                                                                                      
+table.mainmenu{                                                                                                 
+	border-bottom: 3px solid #003399;                                                                             
+	width: 657px;                                                                                                 
+	}                                                                                                             
+                                                                                                                
+table.middleline{                                                                                               
+	border: 0px;                                                                                                  
+	width : 657px;                                                                                                
+	cellpadding : 0px;                                                                                            
+	cellspacing : 0px;                                                                                            
+	}                                                                                                             
+                                                                                                                
+                                                                                                                
+                                                                                                                
+                                                                                                                
+                                                                                                                

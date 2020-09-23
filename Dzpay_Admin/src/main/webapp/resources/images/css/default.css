@@ -1,0 +1,63 @@
+BODY {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+TABLE {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+TR {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+DIV {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+.cate {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 14px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+.con {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 16px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: -1px; TEXT-DECORATION: none
+}
+.small {
+	FONT-SIZE: 8.5pt; COLOR: #333333; LINE-HEIGHT: 16px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: -1px; TEXT-DECORATION: none
+}
+
+
+TEXTAREA {
+	FONT-SIZE: 8pt; COLOR: #666666; LINE-HEIGHT: 13px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT: #cacaca 1px solid; BORDER-TOP: #cacaca 1px solid; BORDER-LEFT: cacaca 1px solid; COLOR: #8F8F8F ; BORDER-BOTTOM: #cacaca  1px solid; 
+}
+.gray {
+ BORDER-RIGHT: #bbbaba 1px solid; BORDER-TOP: #bbbaba 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #bbbaba 1px solid; BORDER-BOTTOM: #bbbaba 1px solid; FONT-FAMILY: "??","Arial"; BACKGROUND-COLOR: #ffffff
+}
+.add{
+	FONT-SIZE: 8.5pt; COLOR: #cccccc; LINE-HEIGHT: 14px; FONT-FAMILY: Seoul, "±¼¸²", Verdana, Helvetica; LETTER-SPACING: -1px; 
+}
+.sub01{
+	LINE-HEIGHT: 18px; 
+}
+
+SELECT {
+	FONT-SIZE: 8pt; COLOR: #666666; LINE-HEIGHT: 13px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; font-family:±¼¸²; BORDER-LEFT: cacaca 1px solid; COLOR: #666666 ; BORDER-BOTTOM: #cacaca  1px solid; 
+}
+
+
+A:link {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 14px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 14px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 14px; FONT-FAMILY: Seoul, ±¼¸², Verdana, Helvetica; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 9pt; COLOR: #4c9f05; LINE-HEIGHT: 14px; FONT-FAMILY: Seoul, "±¼¸²", Verdana, Helvetica; LETTER-SPACING: 0px; 
+}
+.line:hover {
+ FONT-SIZE: 9pt; COLOR: #666666; LINE-HEIGHT: 14px; FONT-FAMILY: Seoul,  "±¼¸²", Verdana, Helvetica; LETTER-SPACING: 0px;  TEXT-DECORATION: underline
+}
+
+
+
+.box1 {BACKGROUND-COLOR: #ffffff; BORDER-RIGHT: #CACACA 1px solid; BORDER-TOP: #CACACA 1px solid; font-family:µ¸¿ò; font-size: 9pt; BORDER-LEFT: #CACACA 1px solid; COLOR: #8F8F8F ; BORDER-BOTTOM: #CACACA  1px solid; }

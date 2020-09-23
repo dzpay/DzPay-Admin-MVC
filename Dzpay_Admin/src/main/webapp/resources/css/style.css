@@ -1,0 +1,260 @@
+body, td {margin:0;font-size:12px;font-family:dotum,Verdana;color:#7D7D7D}
+select, input {font-size:12px;font-family:굴림,Verdana;color:#7d7d7d;padding:3 0 0 2}
+img{border:0;}
+.le {letter-spacing:-1}
+.f8 {font-size:8pt}
+.f_ver{font-family:verdana}
+.b {font-weight:bold}
+.bo {border-collapse:collapse;}
+.input00 {border:1px solid #C6C6C6}
+
+.LR_boarder {border-left:1 solid #F4F4F4; border-right:1 solid #F4F4F4;}/*메인 양쪽 선*/
+
+.topb1 {border-top:1 solid #E1E1E1}
+.botb1 {border-bottom:1 solid #E1E1E1}
+.topb2 {border-top:1 solid #90BCA6}
+.botb2 {border-bottom:1 solid #90BCA6}
+
+.ntop {font-size:11px;color:#ffffff;text-decoration:none}
+.ntop a {font-size:11px;color:#ffffff;text-decoration:none}
+.ntop a:link {font-size:11px;color:#ffffff;text-decoration:none}
+.ntop a:visited {font-size:11px;color:#ffffff;text-decoration:none}
+.ntop a:hover {font-size:11px;color:#ffffff;text-decoration:underline;}
+
+.util {font-size:11px;color:#DDF0F4;text-decoration:none}
+.util a {font-size:11px;color:#fDDF0F4;text-decoration:none}
+.util a:link {font-size:11px;color:#DDF0F4;text-decoration:none}
+.util a:visited {font-size:11px;color:#DDF0F4;text-decoration:none}
+.util a:hover {font-size:11px;color:#ffffff;text-decoration:none;}
+
+.util_guide {font-size:11px;color:#F3E6ED;text-decoration:none}
+.util_guide a {font-size:11px;color:#F3E6ED;text-decoration:none}
+.util_guide a:link {font-size:11px;color:#F3E6ED;text-decoration:none}
+.util_guide a:visited {font-size:11px;color:#F3E6ED;text-decoration:none}
+.util_guide a:hover {font-size:11px;color:#ffffff;text-decoration:none;}
+
+.util_mypage {font-size:11px;color:#E6F1F3;text-decoration:none}
+.util_mypage a {font-size:11px;color:#E6F1F3;text-decoration:none}
+.util_mypage a:link {font-size:11px;color:#E6F1F3;text-decoration:none}
+.util_mypage a:visited {font-size:11px;color:#E6F1F3;text-decoration:none}
+.util_mypage a:hover {font-size:11px;color:#ffffff;text-decoration:none;}
+
+.util_mileage {font-size:11px;color:#E6F2EC;text-decoration:none}
+.util_mileage a {font-size:11px;color:#E6F2EC;text-decoration:none}
+.util_mileage a:link {font-size:11px;color:#E6F2EC;text-decoration:none}
+.util_mileage a:visited {font-size:11px;color:#E6F2EC;text-decoration:none}
+.util_mileage a:hover {font-size:11px;color:#ffffff;text-decoration:none;}
+
+.util_service {font-size:11px;color:#EBF0E1;text-decoration:none}
+.util_service a {font-size:11px;color:#EBF0E1;text-decoration:none}
+.util_service a:link {font-size:11px;color:#EBF0E1;text-decoration:none}
+.util_service a:visited {font-size:11px;color:#EBF0E1;text-decoration:none}
+.util_service a:hover {font-size:11px;color:#ffffff;text-decoration:none;}
+
+.util_help {font-size:11px;color:#ECE6F3;text-decoration:none}
+.util_help a {font-size:11px;color:#ECE6F3;text-decoration:none}
+.util_help a:link {font-size:11px;color:#ECE6F3;text-decoration:none}
+.util_help a:visited {font-size:11px;color:#ECE6F3;text-decoration:none}
+.util_help a:hover {font-size:11px;color:#ffffff;text-decoration:none;}
+
+.util_main {font-size:11px;color:#E5E8F3;text-decoration:none}
+.util_main a {font-size:11px;color:#E5E8F3;text-decoration:none}
+.util_main a:link {font-size:11px;color:#ECE6F3;text-decoration:none}
+.util_main a:visited {font-size:11px;color:#ECE6F3;text-decoration:none}
+.util_main a:hover {font-size:11px;color:#ffffff;text-decoration:none;}
+
+.n_main{font-size:11px;color:#D7DEF3;text-decoration:none}
+.n_main a {font-size:11px;color:#D7DEF3;text-decoration:none}
+.n_main a:link {font-size:11px;color:#D7DEF3;text-decoration:none}
+.n_main a:visited {font-size:11px;color:#D7DEF3;text-decoration:none}
+.n_main a:hover {font-size:11px;color:#D7DEF3;text-decoration:underline;}
+
+.n_guide{font-size:11px;color:#F3EDF3;text-decoration:none}
+.n_guide a {font-size:11px;color:#F3EDF3;text-decoration:none}
+.n_guide a:link {font-size:11px;color:#F3EDF3;text-decoration:none}
+.n_guide a:visited {font-size:11px;color:#F3EDF3;text-decoration:none}
+.n_guide a:hover {font-size:11px;color:#F3EDF3;text-decoration:underline;}
+
+.n_help{font-size:11px;color:#fff;text-decoration:none}
+.n_help a {font-size:11px;color:#fff;text-decoration:none}
+.n_help a:link {font-size:11px;color:#fff;text-decoration:none}
+.n_help a:visited {font-size:11px;color:#fff;text-decoration:none}
+.n_help a:hover {font-size:11px;color:#fff;text-decoration:underline;}
+
+.n_mileage{font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mileage a {font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mileage a:link {font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mileage a:visited {font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mileage a:hover {font-size:11px;color:#ECF4F5;text-decoration:underline;}
+
+.n_mypage{font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mypage a {font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mypage a:link {font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mypage a:visited {font-size:11px;color:#ECF4F5;text-decoration:none}
+.n_mypage a:hover {font-size:11px;color:#ECF4F5;text-decoration:underline;}
+
+.n_service{font-size:11px;color:#F1F5EB;text-decoration:none}
+.n_service a {font-size:11px;color:#F1F5EB;text-decoration:none}
+.n_service a:link {font-size:11px;color:#F1F5EB;text-decoration:none}
+.n_service a:visited {font-size:11px;color:#F1F5EB;text-decoration:none}
+.n_service a:hover {font-size:11px;color:#F1F5EB;text-decoration:underline;}
+
+.n_traffic{font-size:11px;color:#FFE5C0;text-decoration:none}
+.n_traffic a {font-size:11px;color:#FFE5C0;text-decoration:none}
+.n_traffic a:link {font-size:11px;color:#FFE5C0;text-decoration:none}
+.n_traffic a:visited {font-size:11px;color:#FFE5C0;text-decoration:none}
+.n_traffic a:hover {font-size:11px;color:#FFE5C0;text-decoration:underline;}
+
+/*로그인 */
+.log01{font-size:11px;color:#666666;text-decoration:none}
+.log01 a {font-size:11px;color:#666666;text-decoration:none}
+.log01 a:link {font-size:11px;color:#666666;text-decoration:none}
+.log01 a:visited {font-size:11px;color:#666666;text-decoration:none}
+.log01 a:hover {font-size:11px;color:#666666;text-decoration:underline;}
+
+
+/*left 링크*/
+.list01{font-size:12px;color:#333;text-decoration:none}
+.list01 a {font-size:12px;color:#333;text-decoration:none}
+.list01 a:link {font-size:12px;color:#333;text-decoration:none}
+.list01 a:visited {font-size:12px;color:#333;text-decoration:none}
+.list01 a:hover {font-size:12px;color:#333;text-decoration:underline;}
+
+.list02{font-size:12px;color:#444;text-decoration:none}
+.list02 a {font-size:12px;color:#444;text-decoration:none}
+.list02 a:link {font-size:12px;color:#444;text-decoration:none}
+.list02 a:visited {font-size:12px;color:#444;text-decoration:none}
+.list02 a:hover {font-size:12px;color:#444;text-decoration:underline;}
+
+.list03{font-size:12px;color:#4D4D4D;text-decoration:none}
+.list03 a {font-size:12px;color:#4D4D4D;text-decoration:none}
+.list03 a:link {font-size:12px;color:#4D4D4D;text-decoration:none}
+.list03 a:visited {font-size:12px;color:#4D4D4D;text-decoration:none}
+.list03 a:hover {font-size:12px;color:#4D4D4D;text-decoration:underline;}
+
+
+/*링크 help*/
+.faq01 {font-size:12px;color:#333;text-decoration:none}
+.faq01 a {font-size:12px;color:#333;text-decoration:none}
+.faq01 a:link {font-size:12px;color:#333;text-decoration:none}
+.faq01 a:visited {font-size:12px;color:#333;text-decoration:none}
+.faq01 a:hover {font-size:12px;color:#333;text-decoration:none}
+
+
+/*폰트 칼라 & 줄간*/
+.fColor01 {color:#999}
+.fColor02 {color:#666}
+.fColor03 {color:#444}
+.fColor04 {color:#333}
+.fColor05 {color:#715597}
+
+.Fline1 {line-height:18px}
+
+/*마진 & 패딩 & border*/
+.MarginL9 {margin-left:9px}
+.4depth {margin-bottom:30}
+.3depth {margin-bottom:20}
+.2depth {margin-bottom:10}
+
+.faq_line {border-bottom:1 solid #E4DBF0}
+/*백그라운드*/
+.tbg_mypage {background:#F4F8FC}
+.tbg_mypage2 {background:#F3F8FA}
+.tbg_mypage3 {background:#DAECEC}
+.tbg_mypage4 {background:#F4F8F6}
+
+.tbg_guide1 {background:#FAF4FC}
+.tbg_guide2 {background:#F4F8FC}
+
+.tbg_mileage{background:#F4F8F6}
+
+/*mypage board*/
+.myp_t {border-top:2 solid #4AB0BA}
+.myp_b {border-bottom:1 solid #4AB0BA;color:#999}
+.myp_line {border-bottom:1 solid #EDF2F2;color:#999}
+
+.myp_text{padding:15 15;line-height:17px}
+
+.over_myp {background:#F8F8F8}
+.over_myp_{background:#fff}
+
+.myp_s{font-size:12px;color:#7D7D7D;text-decoration:none}
+.myp_s a {font-size:12px;color:#7D7D7D;text-decoration:none}
+.myp_s a:link {font-size:12px;color:#7D7D7D;text-decoration:none}
+.myp_s a:visited {font-size:12px;color:#7D7D7D;text-decoration:none}
+.myp_s a:hover {font-size:12px;color:#F86B02;text-decoration:none}
+
+.num{font-size:10px;color:#7D7D7D;text-decoration:none}
+.num a {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num a:link {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num a:visited {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num a:hover {font-size:10px;color:#7D7D7D;text-decoration:none;font-weight:bold;}
+
+
+/*mileage board*/
+.mg_t {border-top:2 solid #63A17C}
+.mg_b {border-bottom:1 solid #63A17C;color:#999}
+.mg_line {border-bottom:1 solid #EDF2F2;color:#999}
+
+.mg_text{padding:15 15;line-height:17px}
+
+.over_mg {background:#F8F8F8}
+.over_mg_{background:#fff}
+
+.mg_s{font-size:12px;color:#7D7D7D;text-decoration:none}
+.mg_s a {font-size:12px;color:#7D7D7D;text-decoration:none}
+.mg_s a:link {font-size:12px;color:#7D7D7D;text-decoration:none}
+.mg_s a:visited {font-size:12px;color:#7D7D7D;text-decoration:none}
+.mg_s a:hover {font-size:12px;color:#F86B02;text-decoration:none}
+
+.num_m{font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_m a {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_m a:link {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_m a:visited {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_m a:hover {font-size:10px;color:#7D7D7D;text-decoration:none;font-weight:bold;}
+
+/*main board*/
+.main_text{padding:15 15;line-height:17px}
+
+.main_t {border-top:2 solid #3A39A0}
+.main_b {border-bottom:1 solid #3A39A0}
+.main_line {border-bottom:1 solid #EDF2F2}
+
+.over_main {background:#F8F8F8}
+.over_main_{background:#fff}
+
+.main_s{font-size:12px;color:#7D7D7D;text-decoration:none}
+.main_s a {font-size:12px;color:#7D7D7D;text-decoration:none}
+.main_s a:link {font-size:12px;color:#7D7D7D;text-decoration:none}
+.main_s a:visited {font-size:12px;color:#7D7D7D;text-decoration:none}
+.main_s a:hover {font-size:12px;color:#89AD0C;text-decoration:none}
+
+.num_main{font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_main a {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_main a:link {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_main a:visited {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_main a:hover {font-size:10px;color:#7D7D7D;text-decoration:none;font-weight:bold;}
+
+/*help board*/
+.help_text{padding:15 15;line-height:17px}
+
+.help_t {border-top:2 solid #8063A1}
+.help_b {border-bottom:1 solid #8063A1}
+.help_line {border-bottom:1 solid #EDF2F2}
+
+.over_help {background:#F8F8F8}
+.over_help_{background:#fff}
+
+.help_s{font-size:12px;color:#7D7D7D;text-decoration:none}
+.help_s a {font-size:12px;color:#7D7D7D;text-decoration:none}
+.help_s a:link {font-size:12px;color:#7D7D7D;text-decoration:none}
+.help_s a:visited {font-size:12px;color:#7D7D7D;text-decoration:none}
+.help_s a:hover {font-size:12px;color:#89AD0C;text-decoration:none}
+
+.num_help{font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_help a {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_help a:link {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_help a:visited {font-size:10px;color:#7D7D7D;text-decoration:none}
+.num_help a:hover {font-size:10px;color:#7D7D7D;text-decoration:none;font-weight:bold;}
+
+

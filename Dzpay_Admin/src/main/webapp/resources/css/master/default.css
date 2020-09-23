@@ -1,0 +1,40 @@
+@charset "EUC-KR";
+*        { margin:0; padding: 0; }
+body{
+         font-family: "맑은 고딕";
+         font-size: 0.75em;
+         color: #333;
+}
+#admin-form{
+         width:200px;
+         margin:100px auto;
+         border: 1px solid gray;
+         border-radius: 5px;
+         padding: 15px;
+}
+/* inline이였던 요소들을 block으로 바꿈 */
+#admin-form input, #admin-form label{
+         display:block;
+}
+#admin-form label{
+         margin-top: 10px;
+}
+#admin-form input{
+         margin-top: 5px;
+}
+/* 애트리뷰트 선택자 */
+#admin-form input[type='button']{
+         margin: 10px auto;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
